@@ -1,0 +1,272 @@
+/********** Header ************/
+
+.header {
+    height: 200px;
+    width: 100%;
+    background-color: #8AF4CE;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navbar {
+    justify-content: right;
+    align-content: flex-start;
+    gap: 40px;
+    padding: 20px;
+}
+
+.search-products {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a {
+    color: #FA0001;
+    font-family: 'Castoro', serif;
+}
+
+a:hover {
+    color: #BA002D;
+}
+
+h2 {
+    color: #BA002D;
+    font-family: 'Fleur De Leah', serif;
+    font-size: 5em;
+}
+
+.search-input {
+    width: 20em;
+    height: 3em;
+    border-radius: 7px;
+    border-color: #365D73;
+    margin-right: 0;
+    padding: 1em;
+    font-family: 'Castoro', serif;
+}
+
+.search-input:hover {
+    box-shadow: 0 4px 8px 0 #365D73;
+}
+
+.submit-input {
+    width: 5em;
+    height: 2.5em;
+    margin-left: 0;
+    border-radius: 7px;
+    border-color: #365D73;
+    background-color: #6ce9bb;
+    color: #365D73;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Castoro', serif;
+}
+
+.submit-input:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #365D73;
+}
+
+.minicart {
+    background-color: white;
+    width: 20em;
+    height: 2.5em;
+    font-family: 'Castoro', serif;
+    border-radius: 7px;
+    border-color: #365D73;
+    padding-top: 0.5em;
+}
+
+.minicart:hover {
+    box-shadow: 0 4px 8px 0 #365D73;
+}
+
+.minicart img {
+    height: 20px;
+    width: 20px;
+    margin-left: 0.1em;
+    margin-right: 0.3em;
+}
+
+/************ Main part *************/
+
+h3 {
+    text-align: center;
+    color: #BA002D; 
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 3em;
+    margin: 0.2em; 
+}
+
+.bestseller-products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    margin: 1em;
+}
+
+.bestseller-item {
+    text-align: center;
+    font-family: 'Castoro', serif;
+    padding: 0.8em 2.2em;
+    border: 0.1px solid #365D73; 
+    border-radius: 5%;    
+}
+
+.bestseller-item:hover {
+    box-shadow: 0 4px 8px 0 #365D73;
+}
+
+.bestseller-item img {
+    width: 260px;
+    height: 200px;
+    border-radius: 20%;
+}
+
+h5 {
+    color: #BA002D;
+    font-size: 1.3em;
+}
+
+.bestseller-item-button {
+    background-color: white;
+    width: 6em;
+    height: 2em;
+    color: rgba(0, 0, 0, 0.808);
+    border: 1.6px solid #365D73; 
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.bestseller-item p {
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.bestseller-item-button:hover {
+    background-color: #6ce9bb;
+    color: #BA002D; 
+    cursor: pointer;
+}
+
+.see-more-button {
+    margin-left: 39%;
+    margin-bottom: 1em;
+    width: 15em;
+    height: 3em;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.808);
+    border: 1.6px solid #365D73; 
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;    
+}
+
+.see-more-button:hover {
+    background-color: #6ce9bb;
+    color: #BA002D; 
+    cursor: pointer; 
+}
+
+/********** Cart ************/
+
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 100;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #365D73;
+    background-color: white;
+}
+
+.hide-cart {
+    transform: translateX(100%);
+}
+
+.cart-heading {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.cart-heading p {
+    font-size: 1.5em;    
+}
+
+.close-cart {    
+    border: none;
+    background-color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.cart-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cart-item-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+h3.cart-item-name {
+    font-family: 'Castoro', serif;
+    font-size: 1.1em;
+    text-align: left;
+    color: black;
+}
+
+.cart-item-del-button {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(240, 151, 151);
+    border-radius: 5px;    
+    cursor: pointer;
+}
+
+.cart-total {
+    margin-top: 1em;
+    margin-left: 35%;
+}
+
+.cart-total h3 {
+    font-family: 'Castoro', serif;
+    font-size: 1em;
+    color: black;
+    text-align: left;
+}
+
+.remove-all-button {
+    margin-top: 1em;
+    margin-left: 35%;
+    height: 30px;
+    width: 60px;
+    background-color: rgb(240, 151, 151);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}

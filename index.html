@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Nett konditori</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container navbar">
+            <a href="#">Om oss</a>
+            <a href="#">Våre konditorier</a>
+            <a href="#">Betaling og levering</a>
+            <a href="#">Logge inn</a>
+        </div>
+
+        <div class="container search-products">
+            <h2>Choco Konditori</h2>
+            <form action="#">
+                <input type="text" class="search-input" placeholder="Søk blant flere hundre produkter">
+                <input type="submit" value="Søk" class="submit-input">
+            </form>
+
+            <div class="minicart">
+                <a href="" type="button" class="shopping-cart-icon"><img src="assets/cart-icon.png" alt="shopping-cart-icon"></a>
+                <span class="shopping-cart">Handlevogn</span>,
+                <span id="amount"></span>&nbsp;NOK                
+            </div>       
+        </div>
+    </div>
+
+    <h3>Våre bestselgere</h3>
+
+    <div class="bestseller-products-container">
+
+    </div>
+
+    <button class="see-more-button">Se flere</button>
+
+    <div class="cart-container hide-cart">
+        <div class="cart-heading">
+            <p>Handlekurv</p>
+            <button class="close-cart">X</button> 
+        </div>
+        <hr>
+        <ul class="item-list">
+        </ul>        
+        <div class="cart-total">
+            <h3>Total: <span id="cart-total-value"></span>&nbsp;NOK</h3>            
+        </div>
+        <div><button class="remove-all-button">Slett alt</button></div>            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
